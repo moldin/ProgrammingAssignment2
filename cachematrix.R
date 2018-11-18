@@ -26,10 +26,13 @@ cacheSolve <- function(x, ...) {
     ## Return a matrix that is the inverse of 'x'
     m <- x$get()
     inv <- x$getinv()
-    ## If 'inv' is not null it has previously been calculated and we can return the cached value.
+   
+     ## If 'inv' is not null it has previously been calculated and we can return the cached value.
     if(!is.null(inv)){
         return(inv)
     }
+    
+    ## Otherwise we continue to solve the matrix and make sure to cache the result in x using setinv()
     inv <- solve(m)
     x$setinv(inv)
     inv
