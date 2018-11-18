@@ -1,7 +1,3 @@
-## Put comments here that give an overall description of what your
-## functions do
-
-## Write a short comment describing this function
 ## makeCacheMatrix(x) provides a list of functions together with an environment where the 
 ## assigned matrix 'x' is stored. The function setinv(inv) allows the inverse 'inv' to 'x'
 ## to be stored in its environment. The function getinv() provides access to the 'inv' which is NULL
@@ -18,7 +14,6 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
 ## The method cacheSolve(x) calculates the inverse to the matrix 'x'. 'x' must be the
 ## output of the above function makeCacheMatrix. It checks if the inverse has already been cached
 ## and uses the cached value in that case.
